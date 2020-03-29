@@ -1,0 +1,146 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     adult-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.RenameNominalValues-Rgender-N0:Male, 1:Female
+Instances:    46033
+Attributes:   9
+              age
+              workclass
+              education
+              marital-status
+              occupation
+              race
+              gender
+              hours-per-week
+              income
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.2 (9207 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 16
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 15
+
+Large Itemsets L(1):
+age=20-30 11487
+age=30-40 12538
+age=40-50 10182
+workclass=Private 33906
+education=HS-grad 14972
+education=Some-college 10036
+marital-status=Never-married 14875
+marital-status=Married-civ-spouse 21451
+race=White 39444
+gender=Male 31114
+gender=Female 14919
+hours-per-week=20-40 28350
+hours-per-week=40-60 12403
+income=<=50K 34611
+income=>50K 11422
+
+Size of set of large itemsets L(2): 38
+
+Large Itemsets L(2):
+age=20-30 workclass=Private 9649
+age=20-30 race=White 9650
+age=20-30 income=<=50K 10513
+age=30-40 workclass=Private 9370
+age=30-40 race=White 10636
+workclass=Private education=HS-grad 11682
+workclass=Private marital-status=Never-married 12243
+workclass=Private marital-status=Married-civ-spouse 14473
+workclass=Private race=White 29024
+workclass=Private gender=Male 22307
+workclass=Private gender=Female 11599
+workclass=Private hours-per-week=20-40 21656
+workclass=Private income=<=50K 26519
+education=HS-grad race=White 12737
+education=HS-grad gender=Male 10251
+education=HS-grad hours-per-week=20-40 10123
+education=HS-grad income=<=50K 12535
+marital-status=Never-married race=White 12228
+marital-status=Never-married hours-per-week=20-40 9669
+marital-status=Never-married income=<=50K 14153
+marital-status=Married-civ-spouse race=White 19229
+marital-status=Married-civ-spouse gender=Male 19183
+marital-status=Married-civ-spouse hours-per-week=20-40 12062
+marital-status=Married-civ-spouse income=<=50K 11705
+marital-status=Married-civ-spouse income=>50K 9746
+race=White gender=Male 27421
+race=White gender=Female 12023
+race=White hours-per-week=20-40 23465
+race=White hours-per-week=40-60 11366
+race=White income=<=50K 29077
+race=White income=>50K 10367
+gender=Male hours-per-week=20-40 17943
+gender=Male hours-per-week=40-60 10122
+gender=Male income=<=50K 21386
+gender=Male income=>50K 9728
+gender=Female hours-per-week=20-40 10407
+gender=Female income=<=50K 13225
+hours-per-week=20-40 income=<=50K 22833
+
+Size of set of large itemsets L(3): 29
+
+Large Itemsets L(3):
+workclass=Private education=HS-grad race=White 9907
+workclass=Private education=HS-grad income=<=50K 9983
+workclass=Private marital-status=Never-married race=White 10134
+workclass=Private marital-status=Never-married income=<=50K 11755
+workclass=Private marital-status=Married-civ-spouse race=White 12941
+workclass=Private marital-status=Married-civ-spouse gender=Male 12878
+workclass=Private race=White gender=Male 19602
+workclass=Private race=White gender=Female 9422
+workclass=Private race=White hours-per-week=20-40 17985
+workclass=Private race=White income=<=50K 22282
+workclass=Private gender=Male hours-per-week=20-40 13422
+workclass=Private gender=Male income=<=50K 16015
+workclass=Private gender=Female income=<=50K 10504
+workclass=Private hours-per-week=20-40 income=<=50K 18043
+education=HS-grad race=White income=<=50K 10500
+marital-status=Never-married race=White income=<=50K 11590
+marital-status=Never-married hours-per-week=20-40 income=<=50K 9368
+marital-status=Married-civ-spouse race=White gender=Male 17345
+marital-status=Married-civ-spouse race=White hours-per-week=20-40 10483
+marital-status=Married-civ-spouse race=White income=<=50K 10343
+marital-status=Married-civ-spouse gender=Male hours-per-week=20-40 10482
+marital-status=Married-civ-spouse gender=Male income=<=50K 10487
+race=White gender=Male hours-per-week=20-40 15331
+race=White gender=Male hours-per-week=40-60 9388
+race=White gender=Male income=<=50K 18529
+race=White gender=Female income=<=50K 10548
+race=White hours-per-week=20-40 income=<=50K 18607
+gender=Male hours-per-week=20-40 income=<=50K 13450
+gender=Female hours-per-week=20-40 income=<=50K 9383
+
+Size of set of large itemsets L(4): 8
+
+Large Itemsets L(4):
+workclass=Private marital-status=Never-married race=White income=<=50K 9702
+workclass=Private marital-status=Married-civ-spouse race=White gender=Male 11625
+workclass=Private race=White gender=Male hours-per-week=20-40 11463
+workclass=Private race=White gender=Male income=<=50K 13829
+workclass=Private race=White hours-per-week=20-40 income=<=50K 14774
+workclass=Private gender=Male hours-per-week=20-40 income=<=50K 10479
+marital-status=Married-civ-spouse race=White gender=Male income=<=50K 9378
+race=White gender=Male hours-per-week=20-40 income=<=50K 11345
+
+Best rules found:
+
+ 1. marital-status=Never-married hours-per-week=20-40 9669 ==> income=<=50K 9368    <conf:(0.97)> lift:(1.29) lev:(0.05) [2098] conv:(7.94)
+ 2. workclass=Private marital-status=Never-married 12243 ==> income=<=50K 11755    <conf:(0.96)> lift:(1.28) lev:(0.06) [2549] conv:(6.21)
+ 3. workclass=Private marital-status=Never-married race=White 10134 ==> income=<=50K 9702    <conf:(0.96)> lift:(1.27) lev:(0.05) [2082] conv:(5.81)
+ 4. marital-status=Never-married 14875 ==> income=<=50K 14153    <conf:(0.95)> lift:(1.27) lev:(0.06) [2968] conv:(5.1)
+ 5. marital-status=Never-married race=White 12228 ==> income=<=50K 11590    <conf:(0.95)> lift:(1.26) lev:(0.05) [2396] conv:(4.75)
+ 6. gender=Male hours-per-week=40-60 10122 ==> race=White 9388    <conf:(0.93)> lift:(1.08) lev:(0.02) [714] conv:(1.97)
+ 7. hours-per-week=40-60 12403 ==> race=White 11366    <conf:(0.92)> lift:(1.07) lev:(0.02) [738] conv:(1.71)
+ 8. age=20-30 11487 ==> income=<=50K 10513    <conf:(0.92)> lift:(1.22) lev:(0.04) [1876] conv:(2.92)
+ 9. income=>50K 11422 ==> race=White 10367    <conf:(0.91)> lift:(1.06) lev:(0.01) [579] conv:(1.55)
+10. marital-status=Married-civ-spouse race=White income=<=50K 10343 ==> gender=Male 9378    <conf:(0.91)> lift:(1.34) lev:(0.05) [2387] conv:(3.47)
+
