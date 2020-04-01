@@ -1,0 +1,145 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     BreastCancerNOID
+Instances:    569
+Attributes:   31
+              diagnosis
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave points_se
+              symmetry_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave points_worst
+              symmetry_worst
+              fractal_dimension_worst
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                           Class
+Variable                                       M
+================================================
+radius_mean                            -830.3647
+texture_mean                             31.7987
+perimeter_mean                           -27.967
+area_mean                                 8.7446
+smoothness_mean                        8685.1097
+compactness_mean                     -15608.5869
+concavity_mean                        12946.3434
+concave points_mean                    6164.7105
+symmetry_mean                         -6479.0842
+fractal_dimension_mean                18915.9307
+radius_se                               2899.827
+texture_se                             -185.1696
+perimeter_se                           -363.7952
+area_se                                  14.9408
+smoothness_se                        -37182.8004
+compactness_se                        21637.8852
+concavity_se                         -22064.0861
+concave points_se                     97755.9597
+symmetry_se                          -31736.4434
+fractal_dimension_se                -176974.0685
+radius_worst                              0.5916
+texture_worst                            27.9064
+perimeter_worst                          26.4228
+area_worst                                1.1531
+smoothness_worst                       1313.2698
+compactness_worst                     -1028.4575
+concavity_worst                         398.3218
+concave points_worst                   2554.1534
+symmetry_worst                         6606.0244
+fractal_dimension_worst               15228.5821
+Intercept                              -156.8059
+
+
+Odds Ratios...
+                                           Class
+Variable                                       M
+================================================
+radius_mean                                    0
+texture_mean                6.456783337095778E13
+perimeter_mean                                 0
+area_mean                              6276.6551
+smoothness_mean                         Infinity
+compactness_mean                               0
+concavity_mean                          Infinity
+concave points_mean                     Infinity
+symmetry_mean                                  0
+fractal_dimension_mean                  Infinity
+radius_se                               Infinity
+texture_se                                     0
+perimeter_se                                   0
+area_se                             3081051.9445
+smoothness_se                                  0
+compactness_se                          Infinity
+concavity_se                                   0
+concave points_se                       Infinity
+symmetry_se                                    0
+fractal_dimension_se                           0
+radius_worst                              1.8069
+texture_worst              1.3170886350552847E12
+perimeter_worst             2.987395414687881E11
+area_worst                                3.1679
+smoothness_worst                        Infinity
+compactness_worst                              0
+concavity_worst            9.748565103574448E172
+concave points_worst                    Infinity
+symmetry_worst                          Infinity
+fractal_dimension_worst                 Infinity
+
+
+Time taken to build model: 0.64 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         569              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0.0003
+Relative absolute error                  0.0085 %
+Root relative squared error              0.0538 %
+Total Number of Instances              569     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     M
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     B
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 212   0 |   a = M
+   0 357 |   b = B
+

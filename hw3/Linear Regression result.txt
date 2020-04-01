@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     BreastCancerNOID
+Instances:    569
+Attributes:   31
+              diagnosis
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave points_se
+              symmetry_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave points_worst
+              symmetry_worst
+              fractal_dimension_worst
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+diagnosis =
+
+     -0.0709 * radius_mean +
+     -0.0047 * perimeter_mean +
+      0.0008 * area_mean +
+      3.8735 * compactness_mean +
+     -1.1601 * concavity_mean +
+     -1.9936 * concave points_mean +
+     -0.969  * radius_se +
+      0.0363 * perimeter_se +
+      0.0029 * area_se +
+    -19.4375 * smoothness_se +
+      3.0168 * concavity_se +
+     -0.0105 * texture_worst +
+     -0.0058 * perimeter_worst +
+      0.0002 * area_worst +
+     -0.3631 * concavity_worst +
+     -1.8387 * concave points_worst +
+     -0.811  * symmetry_worst +
+     -3.909  * fractal_dimension_worst +
+      3.133 
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.8761
+Mean absolute error                      0.1841
+Root mean squared error                  0.2331
+Relative absolute error                 39.3731 %
+Root relative squared error             48.2196 %
+Total Number of Instances              569     
+
