@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     heart
+Instances:    293
+Attributes:   14
+              ï»¿age
+              sex
+              cp
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              target
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3014 * (normalized) ï»¿age
+ +      -1.0026 * (normalized) sex
+ +       1.734  * (normalized) cp
+ +      -0.9088 * (normalized) trestbps
+ +      -0.4322 * (normalized) chol
+ +       0.0432 * (normalized) fbs
+ +       0.2627 * (normalized) restecg
+ +       1.2303 * (normalized) thalach
+ +      -0.769  * (normalized) exang
+ +      -1.7558 * (normalized) oldpeak
+ +       0.7044 * (normalized) slope
+ +      -1.6552 * (normalized) ca
+ +      -1.6355 * (normalized) thal
+ +       1.7718
+
+Number of kernel evaluations: 13465 (77.441% cached)
+
+
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          86               86      %
+Incorrectly Classified Instances        14               14      %
+Kappa statistic                          0.72  
+Mean absolute error                      0.14  
+Root mean squared error                  0.3742
+Relative absolute error                 28      %
+Root relative squared error             74.2256 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.780    0.060    0.929      0.780    0.848      0.729    0.860     0.834     0
+                 0.940    0.220    0.810      0.940    0.870      0.729    0.860     0.792     1
+Weighted Avg.    0.860    0.140    0.869      0.860    0.859      0.729    0.860     0.813     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 11 |  a = 0
+  3 47 |  b = 1
+
