@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     BreastCancer-weka.filters.unsupervised.attribute.Remove-R1,4-5,7-32
+Instances:    569
+Attributes:   3
+              radius_mean
+              area_mean
+Ignored:
+              diagnosis
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 12
+Within cluster sum of squared errors: 8.877720953704475
+
+Initial starting points (random):
+
+Cluster 0: 12.06,445.3
+Cluster 1: 11.57,409.7
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute     Full Data         0         1
+                (569.0)   (136.0)   (433.0)
+===========================================
+radius_mean     14.1273   19.3218   12.4957
+area_mean      654.8891 1177.3559  490.7887
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      136 ( 24%)
+1      433 ( 76%)
+
