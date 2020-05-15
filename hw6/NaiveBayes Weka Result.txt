@@ -1,0 +1,75 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     Social_Network_Ads
+Instances:    400
+Attributes:   4
+              Gender
+              Age
+              EstimatedSalary
+              Purchased
+Test mode:    split 66.0% train, remainder test
+Evaluation cost matrix:
+ 0 5
+ 3 0
+
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                       Class
+Attribute                  1          0
+                      (0.36)     (0.64)
+========================================
+Gender
+  Male                   67.0      131.0
+  Female                 78.0      128.0
+  [total]               145.0      259.0
+
+Age
+  mean                46.3916    32.7938
+  std. dev.             8.582     7.9703
+  weight sum              143        257
+  precision                 1          1
+
+EstimatedSalary
+  mean             86259.0427 60530.8265
+  std. dev.         41933.495 24305.3719
+  weight sum              143        257
+  precision         1163.7931  1163.7931
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         120               88.2353 %
+Incorrectly Classified Instances        16               11.7647 %
+Kappa statistic                          0.743 
+Total Cost                              70     
+Average Cost                             0.5147
+Mean absolute error                      0.1968
+Root mean squared error                  0.2949
+Relative absolute error                 42.5553 %
+Root relative squared error             60.84   %
+Total Number of Instances              136     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.784    0.059    0.889      0.784    0.833      0.746    0.951     0.928     1
+                 0.941    0.216    0.879      0.941    0.909      0.746    0.951     0.970     0
+Weighted Avg.    0.882    0.157    0.883      0.882    0.881      0.746    0.951     0.954     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40 11 |  a = 1
+  5 80 |  b = 0
+
