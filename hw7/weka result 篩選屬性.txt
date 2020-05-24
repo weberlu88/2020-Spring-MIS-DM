@@ -1,0 +1,62 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     DeerHunter_missing-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.RemoveMisclassified-Wweka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4-C-1-F0-T0.1-I0
+Instances:    203
+Attributes:   21
+              wtdeer
+              state
+              urban
+              race
+              retire
+              employ
+              educ
+              married
+              income
+              gender
+              age
+              huntexp
+              agehunt
+              trips
+              bagdeer
+              numbag
+              bagbuck
+              avgcost
+              totcost
+              a
+              yes
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 202
+	Merit of best subset found:    0.908
+
+Attribute Subset Evaluator (supervised, Class (numeric): 21 yes):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 2,5,6,7,9,10,11,13,14,15,16,17,19,20 : 14
+                     state
+                     retire
+                     employ
+                     educ
+                     income
+                     gender
+                     age
+                     agehunt
+                     trips
+                     bagdeer
+                     numbag
+                     bagbuck
+                     totcost
+                     a
+
